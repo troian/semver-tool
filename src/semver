@@ -202,5 +202,6 @@ case $1 in
   bump) shift; command-bump "$@";;
   get) shift; command-get "$@";;
   compare) shift; command-compare "$@";;
+  validate) shift; validate-version "$@" V_;;
   *) echo "Unknown arguments: $*"; usage-help;;
 esac
